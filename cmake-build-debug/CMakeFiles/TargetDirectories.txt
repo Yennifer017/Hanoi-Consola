@@ -1,0 +1,3 @@
+/home/igriega/CLionProjects/hanoi/cmake-build-debug/CMakeFiles/hanoi.dir
+/home/igriega/CLionProjects/hanoi/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/igriega/CLionProjects/hanoi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
