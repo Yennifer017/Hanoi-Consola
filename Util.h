@@ -10,7 +10,6 @@ class Util {
 public:
     int getNumber();
     int getNaturalNumber(int min, int max);
-    int* getNonRepeatsNumbers(int min, int max, int totalNumbers);
     void clearConsole();
     void enterContinuar();
 };

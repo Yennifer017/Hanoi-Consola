@@ -12,6 +12,7 @@ public:
     std::string showElements();
     void pushConditional(Node<int>* &node);
     bool canPushConditional(int number);
+    void initWithRandoms(int min, int max, int totalElements);
 };
 
 

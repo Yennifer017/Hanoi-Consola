@@ -11,16 +11,9 @@ Hanoi::Hanoi() {
     for (int i = 0; i < TOTAL_STACKS; ++i) {
         this->stacks[i] = new StackHanoi();
     }
-    inicializar();
+    stacks[0]->initWithRandoms(1, 20, TOTAL_ELEMENTS);
 }
-void Hanoi::inicializar() {
-    //int* numbers = util->getNonRepeatsNumbers(1, 50, TOTAL_ELEMENTS);
-    int numbers[TOTAL_ELEMENTS] = {10,9,7,20,4,6,3};
-    for (int i = 0; i < TOTAL_ELEMENTS; ++i) {
-        auto* node = new Node<int>(numbers[i]);
-        stacks[0]->push(node);
-    }
-}
+
 
 void Hanoi::jugar() {
     bool winner = false;
@@ -53,14 +46,17 @@ void Hanoi::jugar() {
         winner = checkWinner();
     }
     if(winner){
-        std::cout<<"Felicidades Has ganado :D";
+        std::cout<<"Felicidades Has ganado :D"<<std::endl;
     }else{
-        std::cout<<"Mas suerte para la proxima u_u";
+        std::cout<<"Mas suerte para la proxima u_u"<<std::endl;
     }
     util->enterContinuar();
 }
 
 void Hanoi::showStacks() {
+    std::cout<<"__________________________________________________________"<<std::endl;
+    std::cout<<"|                        *H*A*N*O*I*                     |"<<std::endl;
+    std::cout<<"__________________________________________________________"<<std::endl;
     int maxCharacters = 40 + 10;
     for (int i = 0; i < TOTAL_STACKS; ++i) {
         std::cout << std::setw(maxCharacters) << std::right << stacks[i]->showElements();
@@ -69,7 +65,7 @@ void Hanoi::showStacks() {
 }
 
 bool Hanoi::checkWinner() {
-    return stacks[0]->isEmpty();
+    return stacks[0]->isEmpty() && (stacks[1]->isEmpty() || stacks[2]->isEmpty());
 }
 
 

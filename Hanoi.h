@@ -16,7 +16,6 @@ public:
 private:
     StackHanoi* stacks[TOTAL_STACKS]{};
     Util* util;
-    void inicializar();
     void showStacks();
     bool checkWinner();
 };
