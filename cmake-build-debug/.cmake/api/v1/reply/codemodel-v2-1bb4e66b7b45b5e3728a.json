@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.27"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "hanoi::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hanoi-Debug-ba8ed23cdb89d2f3e5f1.json",
+					"jsonFile" : "target-hanoi-Release-d3d6d2d8775c985686b8.json",
 					"name" : "hanoi",
 					"projectIndex" : 0
 				}
